@@ -114,7 +114,7 @@ td{
 		width: 85%;
 		transition: 0.3s all linear;
 	}
-	table{
+	.table-res{
 		overflow-x: auto;
 	}
 }
