@@ -114,15 +114,15 @@ td{
 		width: 85%;
 		transition: 0.3s all linear;
 	}
+	table{
+		overflow-x: auto;
+	}
 }
 
 @media only screen and (max-width: 496px) {
 	.search-box,table{
 		width: 95%;
 		transition: 0.3s all linear;
-	}
-	table{
-		overflow-x: auto;
 	}
 	th{
 		font-size: 18px;
