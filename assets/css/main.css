@@ -50,6 +50,7 @@ table {
 header div{
 	background-color: blue;
 	padding: 5px;
+	width: 100%;
 }
 
 header div h1{
@@ -119,5 +120,14 @@ td{
 	.search-box,table{
 		width: 95%;
 		transition: 0.3s all linear;
+	}
+	table{
+		overflow-x: auto;
+	}
+	th{
+		font-size: 18px;
+	}
+	td{
+		font-size: 14px;
 	}
 }
