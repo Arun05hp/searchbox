@@ -2,7 +2,7 @@ function searchData(){
 	var input,tr,td,filter,table,i;
 	input=document.getElementById('input');
 	filter=input.value.toUpperCase();
-	table=document.getElementById('table');
+	table=document.getElementById('tbody');
 	tr=table.getElementsByTagName('tr');
 	for( i = 0; i<tr.length;i++) {
 		td=tr[i].getElementsByTagName("td")[0];
@@ -16,14 +16,5 @@ function searchData(){
 				tr[i].style.display="none";
 			}
 		}
-	}
-}
-        // change table row color 
-var table,tr,i;
-table=document.getElementById("table");
-tr=table.getElementsByTagName("tr");
-for(i = 0;i<tr.length;i++) {
-	if (i % 2 === 0) {
-		tr[i].style.background='#e8edff';
 	}
 }

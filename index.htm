@@ -11,12 +11,6 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
-	<header>
-		<div>
-			<h1>Search Data</h1>
-		</div>
-	</header>
-
 		<form class="search-box">
 			<div class="search-field">
 				<input id="input" onkeyup="searchData()" type="text" placeholder="Search Here" autocomplete="off">
@@ -24,128 +18,132 @@
 		</form>
 	<div class="table-res">
 		<table id="table">
-			<tr>
-				<th>City</th>
-				<th>State</th>
-				<th>Postal Code</th>
-				<th>Region</th>
-			</tr>
-			<tr>
-				<td>Henderson</td>
-				<td>Kentucky</td>
-				<td>42420</td>
-				<td>South</td>
-			</tr>
-			<tr>
-				<td>Los Angeles</td>
-				<td>California</td>
-				<td>90036</td>
-				<td>West</td>
-			
-			</tr>
-			<tr>
-				<td>Fort Lauderdale</td>
-				<td>Florida</td>
-				<td>33311</td>
-				<td>West</td>
-
-			</tr>
-			<tr>
-				<td>Concord</td>
-				<td>North Carolina</td>
-				<td>24115</td>
-				<td>South</td>
+			<thead>
+				<tr>
+					<th>City</th>
+					<th>State</th>
+					<th>Postal Code</th>
+					<th>Region</th>
+				</tr>
+			</thead>
+			<tbody id="tbody">
+				<tr>
+					<td>Henderson</td>
+					<td>Kentucky</td>
+					<td>42420</td>
+					<td>South</td>
+				</tr>
+				<tr>
+					<td>Los Angeles</td>
+					<td>California</td>
+					<td>90036</td>
+					<td>West</td>
 				
-			</tr>
-			<tr>
-				<td>Seattle</td>
-				<td>Washington</td>
-				<td>80514</td>
-				<td>West</td>
-			</tr>
-			<tr>
-				<td>West Jordan</td>
-				<td>Utah</td>
-				<td>64875</td>
-				<td>West</td>
+				</tr>
+				<tr>
+					<td>Fort Lauderdale</td>
+					<td>Florida</td>
+					<td>33311</td>
+					<td>West</td>
 
-			</tr>
-			<tr>
-				<td>San Francisco</td>
-				<td>California</td>
-				<td>78457</td>
-				<td>West</td>
-			</tr>
-			<tr>
-				<td>Madison</td>
-				<td>Wisconsin</td>
-				<td>58475</td>
-				<td>Central</td>
-			</tr>
-			<tr>
-				<td>Fort Lauderdale</td>
-				<td>Florida</td>
-				<td>33311</td>
-				<td>West</td>
+				</tr>
+				<tr>
+					<td>Concord</td>
+					<td>North Carolina</td>
+					<td>24115</td>
+					<td>South</td>
+					
+				</tr>
+				<tr>
+					<td>Seattle</td>
+					<td>Washington</td>
+					<td>80514</td>
+					<td>West</td>
+				</tr>
+				<tr>
+					<td>West Jordan</td>
+					<td>Utah</td>
+					<td>64875</td>
+					<td>West</td>
 
-			</tr>
-			<tr>
-				<td>Concord</td>
-				<td>North Carolina</td>
-				<td>24115</td>
-				<td>South</td>
-				
-			</tr>
-			<tr>
-				<td>San Francisco</td>
-				<td>California</td>
-				<td>78457</td>
-				<td>West</td>
-			</tr>
-			<tr>
-				<td>Los Angeles</td>
-				<td>California</td>
-				<td>90036</td>
-				<td>West</td>
-			</tr>
-			<tr>
-				<td>West Jordan</td>
-				<td>Utah</td>
-				<td>64875</td>
-				<td>West</td>
+				</tr>
+				<tr>
+					<td>San Francisco</td>
+					<td>California</td>
+					<td>78457</td>
+					<td>West</td>
+				</tr>
+				<tr>
+					<td>Madison</td>
+					<td>Wisconsin</td>
+					<td>58475</td>
+					<td>Central</td>
+				</tr>
+				<tr>
+					<td>Fort Lauderdale</td>
+					<td>Florida</td>
+					<td>33311</td>
+					<td>West</td>
 
-			</tr>
-			<tr>
-				<td>San Francisco</td>
-				<td>California</td>
-				<td>78457</td>
-				<td>West</td>
-			</tr>
-			<tr>
-				<td>Seattle</td>
-				<td>Washington</td>
-				<td>80514</td>
-				<td>West</td>
-			</tr>
-			<tr>
-				<td>West Jordan</td>
-				<td>Utah</td>
-				<td>64875</td>
-				<td>West</td>
+				</tr>
+				<tr>
+					<td>Concord</td>
+					<td>North Carolina</td>
+					<td>24115</td>
+					<td>South</td>
+					
+				</tr>
+				<tr>
+					<td>San Francisco</td>
+					<td>California</td>
+					<td>78457</td>
+					<td>West</td>
+				</tr>
+				<tr>
+					<td>Los Angeles</td>
+					<td>California</td>
+					<td>90036</td>
+					<td>West</td>
+				</tr>
+				<tr>
+					<td>West Jordan</td>
+					<td>Utah</td>
+					<td>64875</td>
+					<td>West</td>
 
-			</tr>
-			<tr>
-				<td>San Francisco</td>
-				<td>California</td>
-				<td>78457</td>
-				<td>West</td>
-			</tr>
-			<tr>
-				<td>Madison</td>
-				<td>Wisconsin</td>
-				<td>58475</td>
-				<td>Central</td>
-			</tr>
+				</tr>
+				<tr>
+					<td>San Francisco</td>
+					<td>California</td>
+					<td>78457</td>
+					<td>West</td>
+				</tr>
+				<tr>
+					<td>Seattle</td>
+					<td>Washington</td>
+					<td>80514</td>
+					<td>West</td>
+				</tr>
+				<tr>
+					<td>West Jordan</td>
+					<td>Utah</td>
+					<td>64875</td>
+					<td>West</td>
+
+				</tr>
+				<tr>
+					<td>San Francisco</td>
+					<td>California</td>
+					<td>78457</td>
+					<td>West</td>
+				</tr>
+				<tr>
+					<td>Madison</td>
+					<td>Wisconsin</td>
+					<td>58475</td>
+					<td>Central</td>
+				</tr>
+			</tbody>
 		</table>
 	</div>
 

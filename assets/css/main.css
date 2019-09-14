@@ -47,32 +47,24 @@ table {
 	border-spacing: 0;
 }
 
-header div{
-	background-color: blue;
-	padding: 5px;
-	width: 100%;
-}
-
-header div h1{
-	text-align: center;
-	color: rgb(153,245,58,78);
-	font-weight: 600;
-	font-size: 32px;
-	padding: 10px 0;
+*,
+html {
+	line-height: 1.5;
+	letter-spacing: 1px;
+	font-family: "Source Sans Pro", sans-serif
 }
 .search-box{
 	margin: 2% auto;
-	padding: 10px;
 	width: 500px;
 }
 input::placeholder{
-	color: green;
-	font-size: 20px;
+	font-size: 18px;
+	font-weight: 600;
 }
-div.search-field{
+.search-field{
 	border: 1px solid rgba(0,0,0,0.4);
-	border-radius: 2px;
-	box-shadow: 1px 3px 0 0 rgba(0,0,0,0.2);
+	border-radius: 12px;
+	box-shadow: 0 3px 4px 0 rgba(0,0,0,0.6);
 }
 
 input[type=text] {
@@ -83,31 +75,32 @@ input[type=text] {
 	font-size: 20px;
 	background-color: transparent;
 }
-div.search-field:hover {
-	box-shadow: 2px 4px 0 0 rgb(220,154,211,65);
-	border-color: green;
-	transition: 0.3s all linear;
-}
 table{
 	margin: 4% auto;
 	width: 75%;
 }
-
+thead {
+	color: rgb(255, 255, 255);
+    background: rgb(33, 37, 41);
+}
 th,td{
-	padding: 5px 10px;
+	padding:20px;
 	text-align: center;
 }
 th{
 	text-transform: uppercase;
-	font-size: 22px;
-	font-weight: 700;
+	font-size: 18px;
+	font-weight: 600;
+}
+tbody tr:nth-of-type(odd) {
+	background-color: #e8edff;
+}
+tbody tr:hover {
+	background-color: rgba(0,0,0,0.08);
 }
 td{
-	font-size: 18px;
+	font-size: 16px;
 }
-
-
-
 
 @media only screen and (max-width: 796px) {
 	.search-box,table{
@@ -124,10 +117,13 @@ td{
 		width: 95%;
 		transition: 0.3s all linear;
 	}
+	th,td {
+		padding: 15px 5px;
+	}
 	th{
-		font-size: 18px;
+		font-size: 14px;
 	}
 	td{
-		font-size: 14px;
+		font-size: 12px;
 	}
 }
